@@ -30,7 +30,7 @@ export default function CardCountry({ country }: CardCountryProps) {
   return (
     <Card>
       <CardHeader title={country.name.common === "Falkland Islands" ? "Islas Malvinas Argentinas": country.name.common}></CardHeader>
-      <CardHeader title={`Codigo FIFA: ${country.fifa || "No pertenece a la FIFA"}`}></CardHeader>
+      <CardHeader subheader={`Codigo FIFA: ${country.fifa || "No pertenece a la FIFA"}`}></CardHeader>
       <CardMedia
         component="img"
         alt={country.name.common}
